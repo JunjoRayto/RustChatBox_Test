@@ -192,7 +192,7 @@ impl eframe::App for ChatBoxApp {
                                 let max_width = 350.0;
                                 let scale = (max_width / original_size.x).min(1.0);
                                 let display_size = original_size * scale;
-                                let image_button = egui::ImageButton::new(
+                                let image_button = egui::Button::image(
                                     egui::Image::new((texture.id(), display_size))
                                 );
 
